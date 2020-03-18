@@ -12,4 +12,5 @@
         <constructor-arg value="Spring - это интересно!"/>
     </bean>
 
+
 </beans>
