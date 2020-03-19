@@ -12,5 +12,9 @@
         <constructor-arg value="Spring - это интересно!"/>
     </bean>
 
+    <bean id="myPrinter"
+          class="springhw.beans.Printer">
+    </bean>
+
 
 </beans>
