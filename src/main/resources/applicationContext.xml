@@ -7,14 +7,20 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <bean id="myFactory"
+          class="springhw.beans.Factory">
+    </bean>
+
     <bean id="firstBean"
-        class="springhw.beans.HelloBean">
-        <constructor-arg value="Spring - это интересно!"/>
+        factory-method="createBean" factory-bean="myFactory">
+        <constructor-arg value="Bean from factory"/>
     </bean>
 
     <bean id="myPrinter"
           class="springhw.beans.Printer">
     </bean>
+
+
 
 
 </beans>
